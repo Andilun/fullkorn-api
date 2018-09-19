@@ -1,0 +1,17 @@
+fullkorn
+ettertanke
+
+kategori
+
+kan ha samme ord til ettertanke/ fullkorn
+
+CREATE TABLE fullkorn(id INTEGER PRIMARY KEY AUTOINCREMENT, kategori INTEGER, tekst TEXT);
+CREATE TABLE ettertanke(id INTEGER PRIMARY KEY AUTOINCREMENT, kategori INTEGER, tekst TEXT);
+CREATE TABLE kategori(id INTEGER PRIMARY KEY AUTOINCREMENT, tekst TEXT);
+CREATE TABLE relasjon(fullkornsid INTEGER,ettertankeid INTEGER);
+
+
+
+
+CREATE TABLE fullkorn(id INTEGER PRIMARY KEY AUTOINCREMENT, kategori INTEGER, fullkorn TEXT, ettertanke TEXT);
+CREATE TABLE kategori(id INTEGER PRIMARY KEY AUTOINCREMENT, tekst TEXT);
